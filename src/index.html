@@ -6,9 +6,26 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
-      <h1>Hello world!</h1>
-    </div>
+      <h1> Cifra de Cesar <h1>
+        <form>
+            
+        <p>
+        <input type = "text" placeholder = "Digite sua mensagem" id = "message" />
+        </p>
+      
+        <p>
+        <input type = "number" placeholder = "Digite a chave" id = "offset" />
+        </p>
+            
+        <p>
+        <input type = "submit" id = "btn-encode" value = "Cifrar" onclick = "clickencode()" />
+        <input type = "submit" id = "btn-decode" value = "Decifrar" onclick = "clickdecode()" />
+        </p>
+      
+        </form>
+
+        <p id="mensagemCifrada">  </p>
+    
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
