@@ -14,10 +14,10 @@ function encode(deslocamento, mensagem) { /*função para cifrar a mensagem*/
     } else if (mensagem.charCodeAt(i) >= 97 && mensagem.charCodeAt(i) <= 122) {
       let encodeFormulaLowerCase = ((mensagem.charCodeAt(i)- 97 + deslocamento)% 26) + 97;
       encodedMessage += String.fromCharCode(encodeFormulaLowerCase);
-
-    } else if (mensagem.charCodeAt(i) >= 48 && mensagem.charCodeAt(i) <= 57) { /*cifrar números*/
+      
+      /* função para cifrar números } else if (mensagem.charCodeAt(i) >= 48 && mensagem.charCodeAt(i) <= 57) {
       let encodeFormulaNumber = ((mensagem.charCodeAt(i) - 48 + deslocamento)%10) + 48;
-      encodedMessage += String.fromCharCode(encodeFormulaNumber);
+      encodedMessage += String.fromCharCode(encodeFormulaNumber);*/
 
     } else {
       encodedMessage += String.fromCharCode(mensagem.charCodeAt(i));  
@@ -38,9 +38,9 @@ function decode(deslocamento, mensagem) { /*função para decifrar a mensagem*/
       let decodeFormulaLowerCase = ((mensagem.charCodeAt(i)- 122 - deslocamento)% 26) + 122;
       decodedMessage += String.fromCharCode(decodeFormulaLowerCase);
 
-    } else if (mensagem.charCodeAt(i) >= 48 && mensagem.charCodeAt(i) <= 57) { /*decifrar números*/
+      /* função para decifarar números } else if (mensagem.charCodeAt(i) >= 48 && mensagem.charCodeAt(i) <= 57) {
       let decodeFormulaNumber = ((mensagem.charCodeAt(i) - 57 - deslocamento)%10) + 57;
-      decodedMessage += String.fromCharCode(decodeFormulaNumber);
+      decodedMessage += String.fromCharCode(decodeFormulaNumber);*/
 
     } else {
       decodedMessage += String.fromCharCode(mensagem.charCodeAt(i));  
