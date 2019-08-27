@@ -5,27 +5,36 @@
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-      <h1> Cifra de Cesar <h1>
-        <form>
-            
-        <p>
-        <input type = "text" placeholder = "Digite sua mensagem" id = "message" />
-        </p>
-      
-        <p>
-        <input type = "number" placeholder = "Digite a chave" id = "offset" />
-        </p>
-            
-        <p>
-        <input type = "submit" id = "btn-encode" value = "Cifrar" onclick = "clickencode()" />
-        <input type = "submit" id = "btn-decode" value = "Decifrar" onclick = "clickdecode()" />
-        </p>
-      
-        </form>
 
+  <header>
+    <h1> CAESAR'S CIPHER </h1>
+  </header>
+  
+  <body>    
+           
+      <main>  
+      <form>   
+        <p class=mensagem>
+        MENSAGEM 
+        <input type="text" placeholder="Digite sua mensagem" id="message" />
+        </p>
+      
+        <p class=offset>
+        Chave
+        <input type="number" placeholder="Digite a chave" id="offset" />
+        </p>
+            
+        <p>
+        <input class="button" type="submit" id="btn-encode" value="Cifrar"/>
+        <input class="button" type="submit" id="btn-decode" value="Decifrar"/>
+        </p>
+      </form>
+      </main>
+
+      <section>      
         <p id="mensagemCifrada">  </p>
-    
+      </section> 
+
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
