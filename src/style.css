@@ -4,16 +4,16 @@ header {
     font-family: 'Kalam', cursive;
     font-size: 25px;
     color: rgb(22, 8, 73);   
- 
-}
+ }
 
 h1 {
     margin-bottom: 0px;
 }
 
 body {
-    background-image: url(Imagens/plano2.jpg);
-    background-attachment: fixed;
+    background-image: url(Imagens/plano1.jpg);
+    background-attachment: scroll;
+    background-size: contain;
     font-family: 'Abel', sans-serif;
     font-size: 28px;
 }
@@ -25,9 +25,7 @@ body {
     margin-right: 50px;
     margin-left: 50px;
     margin-top: 0px;
-    font-weight: bold;
 }
-
 
 form {
     display: inline-block;
@@ -38,13 +36,14 @@ form {
     text-align: center;
 }
 
-input[type=text]{
+textarea[type=text]{
     border-radius:4px;
     box-sizing: border-box;
     width: 450px;
     height: 100px;
     font-family: 'Abel', sans-serif;
     font-size: 20px;
+    resize: none;
 }
 
 input[type=number]{
@@ -58,23 +57,24 @@ input[type=number]{
 .button {
     border-radius: 5px;
     font-family: 'Abel', sans-serif;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
-    background-color: rgb(200, 221, 230);
+    background-color: rgb(224, 210, 233);
     width: 80px;
     height: 30px;
 }
 
 section {
     text-align: left;
-    font-weight: bold;
 }
 
 #mensagemCifrada {
     border-radius:4px;
     width: 450px;
-    height: 100px;
-    background-color: rgb(246, 250, 253);
+    height: 130px;
+    background-color: white;
     font-weight: normal;
     font-size: 20px;
+    word-break: break-all;
+    overflow: scroll;
 }
