@@ -1,13 +1,80 @@
 header {
     text-align: center;
-    text-shadow: 0.1em 0.1em 0.5em rgb(80, 79, 79);
-    font-family: "Comic Sans MS", cursive, sans-serif;	
-    font-style: italic;
-    font-weight: bold;
-    color: rgb(15, 15, 97);    
+    text-shadow: 0.1em 0.1em 0.5em rgb(60, 81, 199);
+    font-family: 'Kalam', cursive;
+    font-size: 25px;
+    color: rgb(22, 8, 73);   
+ 
+}
+
+h1 {
+    margin-bottom: 0px;
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    background-image: url(Imagens/plano2.jpg);
+    background-attachment: fixed;
+    font-family: 'Abel', sans-serif;
+    font-size: 28px;
+}
+
+#main {
+    display: inline-block;
+    width: 45%;
+    text-align: justify;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 0px;
+    font-weight: bold;
+}
+
+
+form {
+    display: inline-block;
+    padding-left: 100px; 
+    font-family: 'Abel', sans-serif;
+    font-size: 28px;  
+    position: absolute;
+    text-align: center;
+}
+
+input[type=text]{
+    border-radius:4px;
+    box-sizing: border-box;
+    width: 450px;
+    height: 100px;
+    font-family: 'Abel', sans-serif;
     font-size: 20px;
-    background: rgb(240,240,240);
+}
+
+input[type=number]{
+    border-radius: 5px;
+    width: 150px;
+    height:30px;
+    font-family: 'Abel', sans-serif;
+    font-size: 20px;
+}
+
+.button {
+    border-radius: 5px;
+    font-family: 'Abel', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgb(200, 221, 230);
+    width: 80px;
+    height: 30px;
+}
+
+section {
+    text-align: left;
+    font-weight: bold;
+}
+
+#mensagemCifrada {
+    border-radius:4px;
+    width: 450px;
+    height: 100px;
+    background-color: rgb(246, 250, 253);
+    font-weight: normal;
+    font-size: 20px;
+}
