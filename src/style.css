@@ -20,7 +20,6 @@ body {
     background-attachment: scroll;
     font-family: 'Abel', sans-serif;
     font-size: 25px;
-    /* background-size: contain; */
 }
 
 #main {
@@ -38,8 +37,6 @@ form {
     font-family: 'Abel', sans-serif;
     font-size: 25px;  
     text-align: center;
-    /* display: inline-block;
-    position: absolute; */
 }
 
 textarea[type=text]{
@@ -84,12 +81,6 @@ section {
     word-break: break-all;
     overflow: scroll;
 }
-
-/* img {
-    margin-left: 580px;    
-    margin-right: 0px;
-    transform: rotate(15deg);
-} */
 
 #imagemBloco {
     float: left;

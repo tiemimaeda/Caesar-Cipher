@@ -38,7 +38,7 @@ Foram criados 1 textarea para inserir o texto e 3 inputs, 1 tipo 'number' para i
 
 * `JavaScript:` foram criados dois arquivos .js, o primeiro apenas para chamar os eventos DOM e o segundo, executando as funções 'cifrar' e 'decifrar'. Foi utilizado fluxo condicional 'if...else' para que fossem consideradas letras maiúsculas, minúsculas e, também, números e outros caracteres.
 
-* `CSS:` para dar estilo ao html, foi criado um arquivo css, onde chamamos os diferentes seletores.
+* `CSS:` para dar estilo ao html, foi criado um arquivo css, onde chamamos os elementos para estilizar cada parte do html.
 
 ### Layout da página
 
