@@ -1,92 +1,104 @@
 html {
-    margin: 0 auto;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+p {
+  margin: 0;
 }
 
 header {
-    text-align: center;
-    text-shadow: 0.1em 0.1em 0.5em rgb(60, 81, 199);
-    font-family: 'Lobster', cursive;
-    font-weight: normal;
-    font-size: 25px;
-    color: rgb(22, 8, 73);   
- }
-
-h1 {
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5%;
+  text-shadow: 0.1em 0.1em 0.5em rgb(60, 81, 199);
+  font-family: 'Lobster', cursive;
+  font-weight: normal;
+  font-size: 25px;
+  color: rgb(22, 8, 73);   
 }
+
+.imagemBloco {
+  margin-left: 2%;
+  width: 10%;
+  transform: rotate(15deg);
+} 
 
 body {
-    background-image: url(Imagens/plano1.jpg);
-    background-attachment: scroll;
-    font-family: 'Abel', sans-serif;
-    font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  background-image: url(Imagens/plano1.jpg);
+  background-attachment: scroll;
+  font-family: 'Abel', sans-serif;
+  font-size: 25px;
 }
 
-#main {
-    float: left;
-    width: 25%;
-    text-align: justify;
-    margin-right: 25px;
-    margin-left: 50px;
-    margin-top: 50px;
+article {
+  margin: 2%;
+  text-align: center;
 }
 
 form {
-    float: left;
-    padding-left: 40px; 
-    font-family: 'Abel', sans-serif;
-    font-size: 25px;  
-    text-align: center;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2%;
+  font-family: 'Abel', sans-serif;
+  font-size: 25px;
 }
 
-textarea[type=text]{
-    border-radius:4px;
-    box-sizing: border-box;
-    width: 450px;
-    height: 100px;
-    font-family: 'Abel', sans-serif;
-    font-size: 20px;
-    resize: none;
+.message-to-encode {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
 }
 
-input[type=number]{
-    border-radius: 5px;
-    width: 150px;
-    height:30px;
-    font-family: 'Abel', sans-serif;
-    font-size: 20px;
+textarea {
+  border-radius:4px;
+  width: 40vw;
+  height: 33vh;
+  margin-bottom: 1%;
+  font-family: 'Abel', sans-serif;
+  font-size: 25px;
+  resize: none;
+}
+
+input {
+  border-radius: 5px;
+  border: ;
+  width: 150px;
+  height:40px;
+  margin: 2%;
+  font-family: 'Abel', sans-serif;
+  font-size: 25px;
+}
+
+.btn {
+  display: flex;
 }
 
 .button {
-    border-radius: 8px;
-    font-family: 'Lobster', cursive;
-    font-size: 20px;
-    color: rgb(22, 8, 73);   
-    background-color: rgb(224, 210, 233);
-    width: 90px;
-    height: 35px;
+  border-radius: 8px;
+  border: none;
+  margin: 5%;
+  font-family: 'Lobster', cursive;
+  font-size: 25px;
+  color: rgb(22, 8, 73);   
+  background-color: rgb(224, 210, 233);
+  width: 150px;
+  height: 50px;
 }
 
-section {
-    text-align: left;
-}
 
 #mensagemCifrada {
-    border-radius:4px;
-    width: 450px;
-    height: 130px;
-    background-color: white;
-    font-weight: normal;
-    font-size: 20px;
-    word-break: break-all;
-    overflow: scroll;
-}
-
-#imagemBloco {
-    float: left;
-    width: 20%;
-    padding-top: 60px;
-    transform: rotate(15deg);
-    margin-left: 8%;
-    position: sticky; 
+  border-radius:4px;
+  width: 40vw;
+  height: 30vh;
+  background-color: white;
+  font-weight: normal;
+  font-size: 20px;
+  word-break: break-all;
+  overflow: auto;
+  resize: none;
 }

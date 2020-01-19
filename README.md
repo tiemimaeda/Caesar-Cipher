@@ -43,4 +43,4 @@ Foram criados 1 textarea para inserir o texto e 3 inputs, 1 tipo 'number' para i
 ### Layout da página
 
 
-![Tela inicial](src/Imagens/Tela-hidden-notes.jpg)
+![Tela inicial](src/Imagens/tela-hidden-notes.png)

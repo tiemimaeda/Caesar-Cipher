@@ -1,52 +1,55 @@
 <!DOCTYPE html>
 <html>
-  <head> 
-    <meta charset="utf-8">
-    <title>Hidden Notes</title>
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Abel|Kalam|Lobster&display=swap" rel="stylesheet">
-
-
-  </head>
-
-  <header>
-    <h1><< Hidden Notes >></h1>
-  </header>
   
-  <body>    
-           
-      <main id="main">
-        <p>Este é o bloco de notas que possibilita transformar suas anotações pessoais em códigos.</p>   
-        <p>É fácil de usar. Basta digitar a mensagem, escolher a chave e clicar em 'Cifrar' ou 'Decifrar'.
-          Pronto! Suas anotações estarão seguras!</p>
-      </main>  
-      
-      <form>   
-        <p class=mensagem>
-        <textarea type="text" placeholder="Digite sua mensagem" id="message"></textarea> </textarea>
-        </p>
-      
-        <p class=offset>
-        <input type="number" placeholder="Digite a chave" id="offset" />
-        </p>
-            
-        <p>
-        <input class="button" type="submit" id="btn-encode" value="Cifrar"/>
-        <input class="button" type="submit" id="btn-decode" value="Decifrar"/>
-        </p>
-      
-      <section>
-        <p>Sua mensagem é:</p>      
-        <p id="mensagemCifrada">  </p>
-      </section> 
-      </form>
-      
-      <div id="imagemBloco">
-      <img src="Imagens/bloco.png" alt="imagemBloco">
-      </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hidden Notes</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Abel|Kalam|Lobster&display=swap" rel="stylesheet">
+  
+  
+</head>
 
+<header>
+  <h1> << Hidden Notes >> </h1>
+    <img src="Imagens/bloco.png" alt="imagemBloco" class="imagemBloco">
+  </header>
+
+<body>
+  
+  <article>
+    Este é o bloco de notas que possibilita transformar suas anotações pessoais em códigos.
+    <p>É fácil de usar. Basta digitar a mensagem, escolher a chave e clicar em 'Cifrar' ou 'Decifrar'. Pronto! Suas anotações estarão seguras!</p>
+  </article>
+  
+  <form>
+    <div class="message-to-encode">
+      <div class=mensagem>
+        <textarea type="text" placeholder="Digite sua mensagem" id="message"></textarea> </textarea>
+      </div>
       
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
+      <div class=offset>
+        <input type="number" placeholder="Digite a chave" id="offset" />
+      </div>
+      
+      <div class="btn">
+        <input class="button" type="submit" id="btn-encode" value="Cifrar" />
+        <input class="button" type="submit" id="btn-decode" value="Decifrar" />
+      </div>
+    </div>
+    
+    <div class="message-to-encode">
+      <p>Sua mensagem é:</p>
+      <div id="mensagemCifrada"> </div>
+    </div>
+    
+  </form>
+  
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
+  
+</body>
+
 </html>
